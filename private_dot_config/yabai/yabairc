@@ -1,0 +1,106 @@
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# layout is bsp
+yabai -m config \
+  layout bsp \
+  window_gap 6 \
+  left_padding 6 \
+  right_padding 6 \
+  top_padding 0 \
+  bottom_padding 6 \
+  mouse_follows_focus off \
+  focus_follows_mouse autofocus \
+  mouse_modifier ctrl \
+  window_topmost on \
+  window_shadow off \
+  window_opacity off
+  # window_opacity_duration 0.0 \
+  # active_window_opacity 1.0 \
+  # normal_window_opacity 0.90
+
+
+# autobalance
+# yabai -m config auto_balance on
+
+# config insertion
+# yabai -m config split_ratio 0.67
+
+# whitelist: only allow certain apps to be managed by yabai
+WHITELIST=(
+    "Safari"
+    "Firefox"
+    "Helium"
+    "Anki"
+    "Todoist"
+    "Zed"
+    "Ghostty"
+    "Mattermost"
+    "Zotero"
+    "Antinote"
+    "Signal"
+    "Preview"
+    "Notion"
+    "Notion Calendar"
+    "Obsidian"
+    "Linear"
+    "Microsoft Word"
+    "Microsoft Excel"
+    "Microsoft PowerPoint"
+    "Microsoft Outlook"
+    "calibre"
+    "Mailspring"
+)
+WHITELIST_STRING=$(IFS="|"; echo "${WHITELIST[*]}")
+yabai -m rule --add app!="^$WHITELIST_STRING\$" manage=off
+
+# window rules for apps
+yabai -m rule --add app="^Linear$" display=west
+yabai -m rule --add app="^Microsoft Outlook$" display=west
+yabai -m rule --add app="^Spotify$" display=west
+yabai -m rule --add app="^Mattermost$" display=west
+yabai -m rule --add app="^Signal$" display=west
+yabai -m rule --add app="^Zalo\$" display=west
+
+# https://github.com/asmvik/yabai/issues/1317
+# Source the file containing persistent rules
+source "$HOME/.config/yabai/persistent_rules.sh"
+
+yabai -m signal --add event=window_created action='
+  RULES_FILE="$HOME/.config/yabai/persistent_rules.sh"
+
+  window_info=$(yabai -m query --windows --window $YABAI_WINDOW_ID)
+
+  can_resize=$(echo "$window_info" | jq ".[\"can-resize\"]")
+  [ "$can_resize" != "false" ] && exit 0
+
+  app=$(echo "$window_info" | jq -r ".app")
+  title=$(echo "$window_info" | jq -r ".title")
+
+  [ -z "$app" ] && exit 0
+  [ -z "$title" ] && exit 0
+
+  rule_string=$(printf "yabai -m rule --add app=\"%s\" title=\"%s\" manage=off" "$app" "$title")
+
+  grep -qF "$rule_string" "$RULES_FILE" && exit 0
+
+  yabai -m rule --add app="$app" title="$title" manage=off
+  printf "%s\\n" "$rule_string" >> "$RULES_FILE"
+'
+
+yabai -m rule --add title=' Preferences$' manage=off
+
+# off for Outlook
+yabai -m rule --add title='^Accounts$' app='^Microsoft Outlook$' manage=off
+
+# borders
+borders active_color=0xff89b4fa \
+  inactive_color=0x806c7086 \
+  width=5.0 \
+  hidpi=on \
+  ax_focus=off & 2>/tmp/border.log
+
+yabai -m config focus_follows_mouse autofocus

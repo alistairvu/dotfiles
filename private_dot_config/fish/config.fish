@@ -21,7 +21,6 @@ end
 starship init fish | source
 enable_transience
 
-set -gx BRAVE_API_KEY BSAmZ4sYKgojY5K-qEBJZTlqRch8goI
 set -gx LESSUTFCHARDEF "E000-F8FF:p,F0000-FFFFD:p,100000-10FFFD:p"
 set fish_greeting
 

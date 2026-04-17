@@ -1,0 +1,118 @@
+# If the focused window is in float mode.
+
+# .alias $caps-lock ctrl + alt + cmd
+
+.shell "/bin/sh"
+
+# balance
+ctrl + alt + cmd - 0x18 : yabai -m space --balance
+
+# move westward/left
+ctrl + alt + cmd - left :  yabai -m window --warp west
+# move eastward/right
+ctrl + alt + cmd - right : yabai -m window --warp east
+
+# move up
+ctrl + alt + cmd - up : yabai -m window --warp north
+# move down
+ctrl + alt + cmd - down : yabai -m window --warp south
+
+
+# move window to space 1
+ctrl + alt + cmd - 1 : yabai -m window --space 1 --focus
+# move window to space 2
+ctrl + alt + cmd - 2 : yabai -m window --space 2 --focus
+# move window to space 3
+ctrl + alt + cmd - 3 : yabai -m window --space 3 --focus
+# move window to space 4
+ctrl + alt + cmd - 4 : yabai -m window --space 4 --focus
+# move window to space 5
+ctrl + alt + cmd - 5 : yabai -m window --space 5 --focus
+# move window to space 6
+ctrl + alt + cmd - 6 : yabai -m window --space 6 --focus
+# move window to space 7
+ctrl + alt + cmd - 7 : yabai -m window --space 7 --focus
+# move window to space 8
+ctrl + alt + cmd - 8 : yabai -m window --space 8 --focus
+# move window to space 9
+ctrl + alt + cmd - 9 : yabai -m window --space 9 --focus
+# move window to most recent space
+ctrl + alt + cmd - 0 : yabai -m window --space recent --focus
+
+
+
+# span 1/3
+ctrl + alt + cmd - b : yabai -m window --ratio abs:0.33
+# span 1/2
+ctrl + alt + cmd - n : yabai -m window --ratio abs:0.5
+# span 2/3
+ctrl + alt + cmd - m : yabai -m window --ratio abs:0.67
+
+# rotations
+# counter-clockwise
+ctrl + alt + cmd - j : yabai -m space --rotate 270
+# clockwise
+ctrl + alt + cmd - k : yabai -m space --rotate 90
+
+
+
+# # focus southern window
+# ctrl + ctrl + alt + cmd - j : yabai -m window --focus south
+# # focus northern window
+# ctrl + ctrl + alt + cmd - k : yabai -m window --focus north
+
+# # focus western window
+# ctrl + ctrl + alt + cmd - h : yabai -m window --focus west
+# # focus eastern window
+# ctrl + ctrl + alt + cmd - l : yabai -m window --focus east
+
+# float / unfloat window and center on screen
+ctrl + alt + cmd - t : yabai -m window --toggle float;\
+                       yabai -m window --grid 4:4:1:1:2:2
+
+
+# change split: vertical <-> horizontal
+ctrl + alt + cmd - f : yabai -m window --toggle split
+
+# new terminal
+ctrl + alt + cmd - return : open -a Ghostty.app -n
+# ctrl + alt + cmd - return : open-ghostty
+
+# remove space
+hyper - space : index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
+                yabai -m space --destroy "${index}"
+
+
+# new space and move to it
+ctrl + alt + cmd - space : yabai -m space --create && \
+                           index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
+                           yabai -m space --focus "$(yabai -m query --displays --display | jq '.spaces[-1]')"
+
+
+# new space and move window
+ctrl + alt + cmd - w : yabai -m space --create && \
+                       index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
+                       yabai -m window --space "${index}" && \
+                       yabai -m space --focus "${index}"
+
+# move window to prev space
+ctrl + alt + cmd - 0x21  : yabai -m window --space prev; yabai -m space --focus prev
+# move window to next space
+ctrl + alt + cmd - 0x1E : yabai -m window --space next; yabai -m space --focus next
+
+# move window to western display
+hyper - 0x21 : yabai -m window --display west; yabai -m display --focus west
+# move window to eastern display
+hyper - 0x1E : yabai -m window --display east; yabai -m display --focus east
+
+# apps i use
+# utm
+hyper - u : open -a "UTM"
+# linear
+hyper - l : open -a "Linear"
+# zed
+hyper - z : zed
+# browser (helium)
+hyper - b : open -a "Helium" -n
+# spotify
+hyper - s : open -a "Spotify"

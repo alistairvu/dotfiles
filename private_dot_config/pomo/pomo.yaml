@@ -1,0 +1,28 @@
+onSessionEnd: "ask"
+
+asciiArt:
+  enabled: true
+  font: ansi
+  color: "#89b4fa"
+
+work:
+  duration: 25m
+
+  notification:
+    enable: true
+    urgent: true
+    title: work done!
+    message: break time
+
+break:
+  duration: 5m
+  notification:
+    enable: true
+    urgent: true
+    title: break done!
+    message: back to work
+
+longBreak:
+  enabled: true
+  after: 4
+  duration: 15m

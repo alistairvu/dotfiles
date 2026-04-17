@@ -1,0 +1,94 @@
+# If the focused window is in float mode.
+
+
+# move westward/left
+meh - left :  yabai -m window --warp west
+# move eastward/right
+meh - right : yabai -m window --warp east
+
+# move up
+meh - up : yabai -m window --warp north
+# move down
+meh - down : yabai -m window --warp south
+
+
+# move window to space 1
+meh - 1 : yabai -m window --space 1 --focus
+# move window to space 2
+meh - 2 : yabai -m window --space 2 --focus
+# move window to space 3
+meh - 3 : yabai -m window --space 3 --focus
+# move window to space 4
+meh - 4 : yabai -m window --space 4 --focus
+# move window to space 5
+meh - 5 : yabai -m window --space 5 --focus
+# move window to space 6
+meh - 6 : yabai -m window --space 6 --focus
+# move window to space 7
+meh - 7 : yabai -m window --space 7 --focus
+# move window to space 8
+meh - 8 : yabai -m window --space 8 --focus
+# move window to space 9
+meh - 9 : yabai -m window --space 9 --focus
+
+# span 1/3
+meh - b : yabai -m window --ratio abs:0.33
+# span 1/2
+meh - n : yabai -m window --ratio abs:0.5
+# span 2/3
+meh - m : yabai -m window --ratio abs:0.67
+
+# rotations
+# counter-clockwise
+meh - j : yabai -m space --rotate 270
+# clockwise
+meh - k : yabai -m space --rotate 90
+
+
+
+# # focus southern window
+# ctrl + meh - j : yabai -m window --focus south
+# # focus northern window
+# ctrl + meh - k : yabai -m window --focus north
+
+# # focus western window
+# ctrl + meh - h : yabai -m window --focus west
+# # focus eastern window
+# ctrl + meh - l : yabai -m window --focus east
+
+
+# change split: vertical <-> horizontal
+meh - f : yabai -m window --toggle split
+
+# new terminal
+meh - return : open -a Ghostty.app -n
+# meh - return : open-ghostty
+
+# new space
+meh - space : yabai -m space --create
+# remove space
+hyper - space : yabai -m space --destroy
+
+# move window to prev space
+meh - 0x21  : yabai -m window --space prev; yabai -m space --focus prev
+# move window to next space
+meh - 0x1E : yabai -m window --space next; yabai -m space --focus next
+
+# move window to western display
+hyper - 0x21 : yabai -m window --display west; yabai -m display --focus west
+# move window to eastern display
+hyper - 0x1E : yabai -m window --display east; yabai -m display --focus east
+
+# apps i use
+# utm
+hyper - u : open -a "UTM"
+# antinote
+hyper - a : open -a "Antinote"
+# todoist
+hyper - t : open -a "Todoist"
+# zed
+hyper - z : open -a "Zed"
+# browser (helium)
+hyper - b : open -a "Helium"
+# spotify
+hyper - s : open -a "Spotify"

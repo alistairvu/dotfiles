@@ -1,0 +1,11 @@
+theme = Catppuccin Mocha
+font-family = "Maple Mono NF"
+font-size = 15
+font-feature=calt,cv03,cv09,cv10,cv66,cv38,cv42,cv43,ss10
+window-padding-x = 10
+clipboard-paste-protection = true
+keybind = alt+backspace=text:\x1b\x7f
+keybind = shift+enter=text:\n
+keybind = cmd+t=new_window
+gtk-single-instance = true
+quit-after-last-window-closed=true
