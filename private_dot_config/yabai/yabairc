@@ -41,7 +41,6 @@ WHITELIST=(
     "Mattermost"
     "Zotero"
     "Antinote"
-    "Signal"
     "Preview"
     "Notion"
     "Notion Calendar"
