@@ -1,0 +1,47 @@
+starship init fish | source
+
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+# Load pyenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+
+# Restart your shell for the changes to take effect.
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH "$HOME/.local/bin" $PATH
+
+abbr magma /Applications/Magma/magma
+
+
+
+# pnpm
+set -gx PNPM_HOME /Users/alistair/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/alistair/.cache/lm-studio/bin
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+test -r '/Users/alistair/.opam/opam-init/init.fish' && source '/Users/alistair/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+# END opam configuration
+
+# Added by Windsurf
+fish_add_path /Users/alistair/.codeium/windsurf/bin
+
+# Added by Antigravity
+fish_add_path /Users/alistair/.antigravity/antigravity/bin
+
+
+set -gx PATH "/Users/alistair/.pixi/bin" $PATH
+
+pyenv init - fish | source

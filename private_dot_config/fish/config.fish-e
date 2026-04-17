@@ -1,0 +1,43 @@
+starship init fish | source
+
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH "$HOME/.local/bin" $PATH
+
+abbr magma /Applications/Magma/magma
+
+# pnpm
+set -gx PNPM_HOME /Users/alistair/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/alistair/.cache/lm-studio/bin
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+test -r '/Users/alistair/.opam/opam-init/init.fish' && source '/Users/alistair/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true
+# END opam configuration
+
+# Added by Windsurf
+fish_add_path /Users/alistair/.codeium/windsurf/bin
+# Added by Antigravity
+fish_add_path /Users/alistair/.antigravity/antigravity/bin
+
+set -gx PATH "/Users/alistair/.pixi/bin" $PATH
+
+pyenv init - fish | source
+eval "$(/opt/homebrew/bin/brew shellenv fish)"
+
+if command -v ngrok &>/dev/null
+    eval "$(ngrok completion)"
+end
+
+# Mole shell completion
+set -l output (mole completion fish 2>/dev/null); and echo "$output" | source
+set -l output (mo completion fish 2>/dev/null); and echo "$output" | source

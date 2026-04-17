@@ -1,0 +1,17 @@
+[tools]
+bun = "latest"
+java = "zulu-8"
+node = "latest"
+pnpm = "latest"
+python = "latest"
+ruby = "latest"
+usage = "latest"
+uv = "latest"
+zig = "master"
+zls = "latest"
+
+[settings]
+paranoid = false
+
+[settings.ruby]
+compile = false
