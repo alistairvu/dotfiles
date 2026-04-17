@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sessions": {
+    "24c14613-b348-46aa-966b-705603185a8f": {
+      "sessionId": "24c14613-b348-46aa-966b-705603185a8f",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-01T12-51-41-033Z_24c14613-b348-46aa-966b-705603185a8f.jsonl",
+      "updatedAt": "2026-04-02T01:09:23.658Z"
+    },
+    "9368590a-6cba-4498-9f26-a4f47962d47e": {
+      "sessionId": "9368590a-6cba-4498-9f26-a4f47962d47e",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-02T01-24-15-950Z_9368590a-6cba-4498-9f26-a4f47962d47e.jsonl",
+      "updatedAt": "2026-04-02T05:54:09.886Z"
+    },
+    "7a6069a3-5f9d-45eb-ba99-0dcadcb45527": {
+      "sessionId": "7a6069a3-5f9d-45eb-ba99-0dcadcb45527",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-02T05-54-20-103Z_7a6069a3-5f9d-45eb-ba99-0dcadcb45527.jsonl",
+      "updatedAt": "2026-04-02T05:54:20.117Z"
+    },
+    "6787b357-669e-4fe0-8305-9b4c1c099412": {
+      "sessionId": "6787b357-669e-4fe0-8305-9b4c1c099412",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-02T05-55-53-790Z_6787b357-669e-4fe0-8305-9b4c1c099412.jsonl",
+      "updatedAt": "2026-04-02T05:55:53.803Z"
+    },
+    "d5c1a8e5-592f-4cff-9b7d-55dae59b2415": {
+      "sessionId": "d5c1a8e5-592f-4cff-9b7d-55dae59b2415",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-02T08-31-51-581Z_d5c1a8e5-592f-4cff-9b7d-55dae59b2415.jsonl",
+      "updatedAt": "2026-04-03T07:35:39.550Z"
+    },
+    "79a3b997-6c06-462f-9cf6-c1e351a646d7": {
+      "sessionId": "79a3b997-6c06-462f-9cf6-c1e351a646d7",
+      "cwd": "/Users/alistair/code/intcode",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-intcode--/2026-04-02T09-04-54-304Z_79a3b997-6c06-462f-9cf6-c1e351a646d7.jsonl",
+      "updatedAt": "2026-04-02T10:41:51.046Z"
+    },
+    "76bc31a8-ab18-4256-836c-4022b3fa490c": {
+      "sessionId": "76bc31a8-ab18-4256-836c-4022b3fa490c",
+      "cwd": "/Users/alistair/code/intcode",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-intcode--/2026-04-02T10-47-21-406Z_76bc31a8-ab18-4256-836c-4022b3fa490c.jsonl",
+      "updatedAt": "2026-04-02T10:47:21.411Z"
+    },
+    "f183118e-b32a-47b8-87d3-88b9e56f3051": {
+      "sessionId": "f183118e-b32a-47b8-87d3-88b9e56f3051",
+      "cwd": "/Users/alistair/code/intcode",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-intcode--/2026-04-02T10-55-23-586Z_f183118e-b32a-47b8-87d3-88b9e56f3051.jsonl",
+      "updatedAt": "2026-04-02T12:33:22.343Z"
+    },
+    "345554c1-f21b-455a-95d6-55b76df6d45e": {
+      "sessionId": "345554c1-f21b-455a-95d6-55b76df6d45e",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-03T11-46-20-590Z_345554c1-f21b-455a-95d6-55b76df6d45e.jsonl",
+      "updatedAt": "2026-04-03T11:46:20.600Z"
+    },
+    "560c7b1b-2caf-43f0-b344-f12ffec3639a": {
+      "sessionId": "560c7b1b-2caf-43f0-b344-f12ffec3639a",
+      "cwd": "/Users/alistair/code/dr-sim",
+      "sessionFile": "/Users/alistair/.pi/agent/sessions/--Users-alistair-code-dr-sim--/2026-04-03T12-43-19-729Z_560c7b1b-2caf-43f0-b344-f12ffec3639a.jsonl",
+      "updatedAt": "2026-04-03T12:43:19.733Z"
+    }
+  }
+}
