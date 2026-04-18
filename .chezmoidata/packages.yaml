@@ -8,6 +8,7 @@ packages:
   - btop
   - btrfs-progs
   - chezmoi
+  - cowsay
   - clang
   - dosfstools
   - efibootmgr
