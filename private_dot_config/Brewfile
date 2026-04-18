@@ -398,8 +398,6 @@ cask "hubstaff"
 cask "hyperkey"
 # Note taking and to-do application with synchronisation capabilities
 cask "joplin"
-# Keyboard customiser
-cask "karabiner-elements"
 # Tool to show what is persistently installed on the computer
 cask "knockknock"
 # Desktop reader for Kobo eBooks
