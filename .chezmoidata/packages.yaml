@@ -165,7 +165,6 @@ packages:
     - python-tk@3.12
     - qemu
     - resvg
-    - ruby-install
     - sevenzip
     - shellcheck
     - smartmontools
@@ -197,19 +196,14 @@ packages:
     - jackielii/tap/skhd-zig
     - jnsahaj/lumen/lumen
     - k06a/tap/macpow
-    - lgug2z/tap/komorebi-for-mac
     - mongodb/brew/mongodb-community
-    - samtay/tui/tetris
-    - stripe/stripe-cli/stripe
     - supabase/tap/supabase
     - vladkens/tap/macmon
     - zackelia/formulae/bclm
     casks:
-    - 1password-cli
     - adobe-digital-editions
     - affinity
     - aldente
-    - amethyst
     - android-platform-tools
     - anki
     - audacity
@@ -225,7 +219,6 @@ packages:
     - figma
     - firefox
     - font-commit-mono-nerd-font
-    - font-hack-nerd-font
     - font-maple-mono-nf
     - font-symbols-only-nerd-font
     - fontsmoothingadjuster
@@ -233,10 +226,7 @@ packages:
     - github
     - handbrake-app
     - helium-browser
-    - hiddenbar
     - hubstaff
-    - hyperkey
-    - joplin
     - knockknock
     - kobo
     - linear-linear
@@ -260,7 +250,6 @@ packages:
     - raycast
     - rectangle
     - rocket
-    - safari-technology-preview
     - sf-symbols
     - sigil
     - signal
@@ -299,8 +288,6 @@ packages:
       name: Kindle
     - id: '1614666244'
       name: Mattermost
-    - id: '1274495053'
-      name: Microsoft To Do
     - id: '1564329434'
       name: Momentum
     - id: '1639917298'
@@ -323,13 +310,10 @@ packages:
     - jundot/omlx
     - k06a/tap
     - kanriapp/cask
-    - lgug2z/tap
     - matheuzgomes/snip
     - mongodb/brew
     - nikitabobko/tap
-    - samtay/tui
     - sidneys/homebrew
-    - stripe/stripe-cli
     - supabase/tap
     - tabbyml/tabby
     - vladkens/tap
