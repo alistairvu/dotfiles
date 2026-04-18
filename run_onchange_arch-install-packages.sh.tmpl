@@ -1,7 +1,7 @@
 #!/bin/bash
 {{ if eq .chezmoi.os "linux" -}}
 {{   if eq .chezmoi.osRelease.id "arch" }}
-paru -S --file=/dev/stdin <<EOF
+paru -S --needed --file=/dev/stdin <<EOF
 {{ range .packages.arch -}}
 {{ . }}
 {{ end -}}
