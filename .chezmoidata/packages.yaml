@@ -257,10 +257,6 @@ packages:
       - zoom
       - zotero
     mas:
-      - id: "1402042596"
-        name: AdBlock
-      - id: "1548711022"
-        name: Barbee
       - id: "6444266324"
         name: Burnfeed
       - id: "6648771147"
