@@ -8,7 +8,7 @@ function starship_transient_prompt_func
         set prompt_status ""
     end
 
-    echo -n "$(starship module os)"
+    echo -n "$(starship module hostname)"
     echo -n "$(starship module directory)"
 
     echo "$prompt_status$(starship module character -s $_flag_status)"
