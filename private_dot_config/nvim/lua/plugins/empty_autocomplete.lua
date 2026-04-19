@@ -1,10 +1,10 @@
 return {
   {
-    "hrsh7th/nvim-cmp",
+    "Saghen/blink.cmp",
     opts = {
-      experimental = {
-        ghost_text = false,
+      completion = {
+        ghost_text = { enabled = false },
       },
     }
-  }
+  },
 }

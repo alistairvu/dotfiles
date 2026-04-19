@@ -40,6 +40,7 @@ end
 if test -f /etc/arch-release
     set -gx PATH "$HOME/.local/bin" $PATH
     set -gx MANPAGER "bat -plman"
+    set -gx EDITOR nvim
     fzf --fish | source
     zoxide init fish | source
     mise activate fish | source
