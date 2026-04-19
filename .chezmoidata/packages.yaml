@@ -282,7 +282,6 @@ packages:
         name: Xcode
     taps:
       - anomalyco/tap
-      - armand-sauzay/tap
       - arthur-ficial/tap
       - asmvik/formulae
       - bahaaio/pomo
@@ -292,13 +291,8 @@ packages:
       - jnsahaj/lumen
       - jundot/omlx
       - k06a/tap
-      - kanriapp/cask
-      - matheuzgomes/snip
       - mongodb/brew
-      - nikitabobko/tap
-      - sidneys/homebrew
       - supabase/tap
-      - tabbyml/tabby
       - vladkens/tap
     uv:
       - basedpyright
