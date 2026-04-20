@@ -9,3 +9,4 @@ keybind = shift+enter=text:\n
 keybind = cmd+t=new_window
 gtk-single-instance = true
 quit-after-last-window-closed=true
+adjust-cell-width = "-5%"

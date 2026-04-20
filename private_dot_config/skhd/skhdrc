@@ -112,7 +112,7 @@ hyper - u : open -a "UTM"
 hyper - l : open -a "Linear"
 # zed
 hyper - z : zed
-# browser (helium)
-hyper - b : open -a "Helium" -n
+# browser (zen)
+hyper - b : open -a "Zen" -n
 # spotify
 hyper - s : open -a "Spotify"

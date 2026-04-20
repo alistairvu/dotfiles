@@ -14,3 +14,5 @@ yabai -m rule --add app="Karabiner-Updater" title="Software Update" manage=off
 yabai -m rule --add app="Raycast" title="Settings" manage=off
 yabai -m rule --add app="Endurance" title="Endurance" manage=off
 yabai -m rule --add app="Installer" title="Install helper-installer" manage=off
+yabai -m rule --add app="VMware Fusion" title="Create a Virtual Machine" manage=off
+yabai -m rule --add app="VMware Fusion" title="Fedora 64-bit Arm: Settings" manage=off
