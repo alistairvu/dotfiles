@@ -33,12 +33,15 @@ packages:
     - paru
     - polkit
     - qemu-guest-agent
+    - ripgrep
     - starship
     - stow
     - sudo
     - tailscale
     - terminus-font
     - texlive-bin
+    - texlive-basic
+    - texlive-core
     - tree
     - ttf-hack-nerd
     - ttf-maplemono-nf-unhinted
