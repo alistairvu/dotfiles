@@ -66,12 +66,12 @@ on-mode-changed = []
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 4
-    inner.vertical =   4
-    outer.left =       4
-    outer.bottom =     4
-    outer.top =        4
-    outer.right =      4
+    inner.horizontal = 12
+    inner.vertical =   12
+    outer.left =       12
+    outer.bottom =     12
+    outer.top =        6
+    outer.right =      12
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -111,7 +111,15 @@ on-mode-changed = []
     alt-ctrl-cmd-comma = 'layout accordion horizontal vertical'
 
     # open a new terminal
-    alt-ctrl-cmd-enter = 'exec-and-forget open-ghostty'
+    alt-ctrl-cmd-enter = 'exec-and-forget open -a Ghostty.app -n'
+
+    # open frequently used apps
+    alt-ctrl-cmd-shift-u = 'exec-and-forget open -a "UTM"'
+    alt-ctrl-cmd-shift-l = 'exec-and-forget open -a "Linear"'
+    alt-ctrl-cmd-shift-z = 'exec-and-forget open -a "Zed"'
+    alt-ctrl-cmd-shift-b = 'exec-and-forget open -a "Dia" -n'
+    alt-ctrl-cmd-shift-s = 'exec-and-forget open -a "Spotify"'
+
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-ctrl-cmd-ctrl-h = 'focus left'
@@ -197,4 +205,4 @@ on-mode-changed = []
 
 [[on-window-detected]]
   check-further-callbacks = true
-  run = 'layout tiling'
+  run = 'layout floating'

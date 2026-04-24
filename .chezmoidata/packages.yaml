@@ -179,6 +179,7 @@ packages:
       - zenith
       - zlib
       - zoxide
+      - gdown
       - anomalyco/tap/opencode
       - arthur-ficial/tap/apfel
       - asmvik/formulae/yabai
@@ -246,6 +247,7 @@ packages:
       - table-tool
       - tg-pro
       - thaw
+      - thebrowsercompany-dia
       - the-unarchiver
       - utm
       - vlc
@@ -255,6 +257,7 @@ packages:
       - zed
       - zoom
       - zotero
+      - jellyfin
     mas:
       - id: "6444266324"
         name: Burnfeed

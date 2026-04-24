@@ -79,26 +79,36 @@ ctrl + alt + cmd - return : open -a Ghostty.app -n
 # ctrl + alt + cmd - return : open-ghostty
 
 # remove space
-hyper - space : index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
+hyper - 0x1b : index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
                 yabai -m space --destroy "${index}"
 
 
 # new space and move to it
-ctrl + alt + cmd - space : yabai -m space --create && \
+ctrl + alt + cmd - 0x1b : yabai -m space --create && \
                            index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
                            yabai -m space --focus "$(yabai -m query --displays --display | jq '.spaces[-1]')"
 
 
 # new space and move window
-ctrl + alt + cmd - w : yabai -m space --create && \
+ctrl + alt + cmd - e : yabai -m space --create && \
                        index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
                        yabai -m window --space "${index}" && \
                        yabai -m space --focus "${index}"
+
+# quit app
+ctrl + alt + cmd - q : skhd -k "cmd -q"
+# close window
+ctrl + alt + cmd - w : yabai -m window --close
 
 # move window to prev space
 ctrl + alt + cmd - 0x21  : yabai -m window --space prev; yabai -m space --focus prev
 # move window to next space
 ctrl + alt + cmd - 0x1E : yabai -m window --space next; yabai -m space --focus next
+
+# prev space
+ctrl + alt + cmd - 0x2b : yabai -m space --focus prev || yabai -m space --focus last
+# next psace
+ctrl + alt + cmd - 0x2f : yabai -m space --focus next || yabai -m space --focus first
 
 # move window to western display
 hyper - 0x21 : yabai -m window --display west; yabai -m display --focus west
@@ -112,7 +122,9 @@ hyper - u : open -a "UTM"
 hyper - l : open -a "Linear"
 # zed
 hyper - z : zed
-# browser (zen)
-hyper - b : open -a "Zen" -n
+# browser (dia)
+hyper - b : open -a "Dia" -n
 # spotify
 hyper - s : open -a "Spotify"
+# raycast
+ctrl + alt + cmd - space : open -a "Raycast"
