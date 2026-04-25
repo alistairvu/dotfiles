@@ -42,7 +42,7 @@ if test -f /etc/arch-release
     set -gx MANPAGER "bat -plman"
     set -gx EDITOR nvim
     fzf --fish | source
-    zoxide init fish | source
+    zoxide init fish --cmd cd | source
     mise activate fish | source
 
     if status --is-interactive
@@ -91,7 +91,7 @@ set -l output (mo completion fish 2>/dev/null); and echo "$output" | source
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin /Users/alistair/.ghcup/bin $PATH # ghcup-env
 
-zoxide init fish | source
+zoxide init fish --cmd cd | source
 
 if status is-interactive
     mise activate fish | source

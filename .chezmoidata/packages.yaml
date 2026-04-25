@@ -81,6 +81,7 @@ packages:
       - countdown
       - cowsay
       - detect-secrets
+      - defaultbrowser
       - eigen
       - eza
       - fastfetch
