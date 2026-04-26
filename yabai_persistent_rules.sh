@@ -38,3 +38,4 @@ yabai -m rule --add app="Tero Subtitler" title="Save file" manage=off
 yabai -m rule --add app="Tero Subtitler" title="Save subtitles" manage=off
 yabai -m rule --add app="VMware Fusion" title="Fedora 64-bit Arm" manage=off
 yabai -m rule --add app="Installer" title="Install DaVinci Resolve" manage=off
+yabai -m rule --add app="Activity Monitor" title="CPU Usage" manage=off
