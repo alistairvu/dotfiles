@@ -184,6 +184,7 @@ packages:
       - zlib
       - zoxide
       - gdown
+      - mkvtoolnix
       - anomalyco/tap/opencode
       - arthur-ficial/tap/apfel
       - asmvik/formulae/yabai
