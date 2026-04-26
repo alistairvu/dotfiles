@@ -2,6 +2,7 @@
 bun = "latest"
 "conda:clang" = "latest"
 "conda:clang-format" = "latest"
+"conda:clang-tools" = "latest"
 "conda:llvm" = "latest"
 java = "zulu-8"
 node = "latest"
