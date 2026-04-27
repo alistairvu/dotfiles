@@ -8,10 +8,10 @@ sudo yabai --load-sa
 yabai -m config \
   layout bsp \
   window_gap 12 \
-  left_padding 12 \
-  right_padding 12 \
+  left_padding 6 \
+  right_padding 6 \
   top_padding 6 \
-  bottom_padding 12 \
+  bottom_padding 6 \
   mouse_follows_focus off \
   focus_follows_mouse autofocus \
   mouse_modifier ctrl \
