@@ -1,4 +1,4 @@
-packages:
+darwin_packages:
   brews:
     - zstd
     - libtiff

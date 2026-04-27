@@ -1,4 +1,4 @@
-packages:
+arch_packages:
   arch:
     - archlinuxcn-keyring
     - base

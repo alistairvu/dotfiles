@@ -4,7 +4,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 {{   if (or (eq .chezmoi.osRelease.id "archarm") (eq .chezmoi.osRelease.id "arch")) }}
 paru -S --noconfirm --needed - <<EOF
-{{ range .packages.arch -}}
+{{ range .arch_packages.arch -}}
 {{ . }}
 {{ end -}}
 EOF
@@ -13,7 +13,7 @@ EOF
 comm -23 \
   <(pacman -Qqe | sort) \
   <(sort <<'DESIRED'
-{{ range .packages.arch -}}
+{{ range .arch_packages.arch -}}
 {{ . }}
 {{ end -}}
 DESIRED

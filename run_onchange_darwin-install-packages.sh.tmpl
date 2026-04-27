@@ -2,19 +2,19 @@
 {{ if eq .chezmoi.os "darwin" -}}
 
 brew bundle --cleanup --zap --file=/dev/stdin <<EOF
-{{ range .packages.darwin.taps -}}
+{{ range .darwin_packages.taps -}}
 tap {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.brews -}}
+{{ range .darwin_packages.brews -}}
 brew {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.casks -}}
+{{ range .darwin_packages.casks -}}
 cask {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.mas -}}
+{{ range .darwin_packages.mas -}}
 mas {{ .name | quote }}, id: {{ .id }}
 {{ end -}}
-{{ range .packages.darwin.uv -}}
+{{ range .darwin_packages.uv -}}
 uv {{ . | quote }}
 {{ end -}}
 EOF
