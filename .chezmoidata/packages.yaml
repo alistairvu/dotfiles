@@ -61,8 +61,6 @@ packages:
       - bash
       - bat
       - bear
-      - berkeley-db
-      - bison
       - boost
       - bpython
       - btop
@@ -96,7 +94,6 @@ packages:
       - librist
       - libssh
       - tesseract
-      - ffmpeg-full
       - figlet
       - fish
       - flyctl
@@ -124,7 +121,6 @@ packages:
       - imagemagick
       - liblqr
       - libraw
-      - imagemagick-full
       - imlib2
       - iproute2mac
       - openjdk
@@ -137,8 +133,6 @@ packages:
       - klee
       - lazydocker
       - lazygit
-      - libffi
-      - llvm
       - lua
       - lua-language-server
       - luarocks
@@ -161,7 +155,6 @@ packages:
       - perl
       - phoronix-test-suite
       - pipx
-      - postgresql@16
       - qemu
       - resvg
       - sevenzip
@@ -172,7 +165,6 @@ packages:
       - stylua
       - tmux
       - toilet
-      - trash
       - tree
       - tree-sitter-cli
       - watch
@@ -181,7 +173,6 @@ packages:
       - yazi
       - yt-dlp
       - zenith
-      - zlib
       - zoxide
       - gdown
       - mkvtoolnix
