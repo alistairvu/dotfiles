@@ -41,3 +41,4 @@ yabai -m rule --add app="Installer" title="Install DaVinci Resolve" manage=off
 yabai -m rule --add app="Activity Monitor" title="CPU Usage" manage=off
 yabai -m rule --add app="Microsoft Word" title="Word Preferences" manage=off
 yabai -m rule --add app="Microsoft Word" title="About Word" manage=off
+yabai -m rule --add app="Zed" title="Save" manage=off

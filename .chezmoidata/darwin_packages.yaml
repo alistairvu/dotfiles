@@ -1,51 +1,34 @@
 darwin_packages:
   brews:
-    - zstd
-    - libtiff
-    - little-cms2
-    - openssl@3
+    - arthur-ficial/tap/apfel
     - asm-lsp
     - automake
     - bash
     - bat
     - bear
     - boost
+    - felixkratz/formulae/borders
     - bpython
     - btop
     - cabextract
     - cairo
     - cdrtools
-    - harfbuzz
     - chezmoi
-    - chruby
     - cloc
     - cmake
-    - cmatrix
-    - libyaml
     - cocoapods
     - coreutils
     - countdown
     - cowsay
-    - detect-secrets
     - defaultbrowser
-    - eigen
+    - detect-secrets
     - eza
     - fastfetch
     - fastlane
     - fd
     - ffmpeg
-    - libevent
-    - p11-kit
-    - unbound
-    - gnutls
-    - libass
-    - librist
-    - libssh
-    - tesseract
-    - figlet
     - fish
     - flyctl
-    - libtool
     - fontforge
     - fortune
     - fzf
@@ -53,84 +36,88 @@ darwin_packages:
     - gcc
     - gcovr
     - gdbm
+    - gdown
     - gh
-    - ghostscript
     - git
     - git-lfs
     - git-xet
     - gnu-sed
-    - libksba
+    - gnutls
     - go
     - graphviz
-    - grpc
+    - harfbuzz
     - helix
-    - htop
-    - libheif
     - imagemagick
-    - liblqr
-    - libraw
     - imlib2
     - iproute2mac
-    - openjdk
     - jdtls
     - jmeter
     - jq
-    - kew
-    - minisat
-    - z3
     - klee
     - lazydocker
     - lazygit
+    - libass
+    - libevent
+    - libheif
+    - libksba
+    - liblqr
+    - libraw
+    - librist
+    - libssh
+    - libtiff
+    - libtool
+    - libyaml
     - lua
     - lua-language-server
     - luarocks
     - luv
+    - vladkens/tap/macmon
+    - k06a/tap/macpow
     - mactop
     - make
     - mas
     - maven
+    - minisat
     - mise
+    - mkvtoolnix
     - mole
+    - mongodb/brew/mongodb-community
     - mongosh
-    - pandoc
-    - ripgrep
     - nb
     - ncdu
     - neovim
     - opam
-    - poppler
+    - anomalyco/tap/opencode
+    - openssl@3
+    - p11-kit
+    - pandoc
     - pdfpc
     - perl
+    - poppler
     - qemu
     - resvg
+    - ripgrep
     - sevenzip
+    - jackielii/tap/skhd-zig
     - starship
     - stylelint
     - stylua
+    - supabase/tap/supabase
+    - tesseract
     - tmux
-    - toilet
     - tree
     - tree-sitter-cli
+    - unbound
     - watch
     - wget
-    - wimlib
+    - catppuccin/tap/whiskers
+    - asmvik/formulae/yabai
     - yazi
     - yt-dlp
+    - z3
     - zenith
     - zoxide
-    - gdown
-    - mkvtoolnix
-    - anomalyco/tap/opencode
-    - arthur-ficial/tap/apfel
-    - asmvik/formulae/yabai
-    - catppuccin/tap/whiskers
-    - felixkratz/formulae/borders
-    - jackielii/tap/skhd-zig
-    - jnsahaj/lumen/lumen
-    - k06a/tap/macpow
-    - mongodb/brew/mongodb-community
-    - supabase/tap/supabase
-    - vladkens/tap/macmon
+    - zstd
   casks:
     - adobe-digital-editions
     - affinity
