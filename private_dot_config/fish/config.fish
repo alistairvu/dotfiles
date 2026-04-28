@@ -104,7 +104,10 @@ fish_add_path "/Users/alistair/.bun/bin"
 fzf --fish | source
 
 set -gx HOMEBREW_NO_ENV_HINTS 1
+set -x HOMEBREW_CASK_OPTS --no-quarantine
+
 set -gx XDG_CONFIG_HOME "$HOME/.config"
+
 
 fish_add_path "/Users/alistair/.spicetify"
 true

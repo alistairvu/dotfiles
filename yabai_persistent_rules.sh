@@ -42,3 +42,5 @@ yabai -m rule --add app="Activity Monitor" title="CPU Usage" manage=off
 yabai -m rule --add app="Microsoft Word" title="Word Preferences" manage=off
 yabai -m rule --add app="Microsoft Word" title="About Word" manage=off
 yabai -m rule --add app="Zed" title="Save" manage=off
+yabai -m rule --add app="Thaw" title="Software Update" manage=off
+yabai -m rule --add app="Thaw" title="Updating Thaw" manage=off
