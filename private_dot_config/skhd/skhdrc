@@ -128,3 +128,5 @@ hyper - b : open -a "$(defaultbrowser | grep "*" | cut -c 3-)" -n
 hyper - s : open -a "Spotify"
 # raycast
 ctrl + alt + cmd - space : open -a "Raycast"
+# obsidian
+hyper - o : open -a "Obsidian"

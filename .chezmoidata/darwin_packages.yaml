@@ -186,6 +186,7 @@ darwin_packages:
     - zoom
     - zotero
     - jellyfin
+    - font-new-york
   mas:
     - id: "6444266324"
       name: Burnfeed
