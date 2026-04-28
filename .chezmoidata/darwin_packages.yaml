@@ -206,6 +206,8 @@ darwin_packages:
       name: Tailscale
     - id: "497799835"
       name: Xcode
+    - id: "1136220934"
+      name: Infuse
   taps:
     - anomalyco/tap
     - arthur-ficial/tap
