@@ -107,4 +107,4 @@ set -gx HOMEBREW_NO_ENV_HINTS 1
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 
 fish_add_path "/Users/alistair/.spicetify"
-true
+return

@@ -118,6 +118,7 @@ darwin_packages:
     - zenith
     - zoxide
     - zstd
+    - keychain
   casks:
     - adobe-digital-editions
     - affinity
