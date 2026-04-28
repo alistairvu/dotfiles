@@ -24,3 +24,9 @@ vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 
 vim.g.mapleader = " "
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+})
