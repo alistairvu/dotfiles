@@ -56,7 +56,7 @@ set -gx MANPAGER "sh -c 'col -bx | bat -plman'"
 set -gx PATH "$HOME/.local/bin" $PATH
 
 # editor
-set -gx EDITOR "zed --wait"
+set -gx EDITOR "nvim"
 
 # pnpm
 set -gx PNPM_HOME /Users/alistair/Library/pnpm
