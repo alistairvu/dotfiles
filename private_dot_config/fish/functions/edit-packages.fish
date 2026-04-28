@@ -8,5 +8,5 @@ function edit-packages
     echo "Unsupported OS: $os"
     return
   end
-  vim $PKG_FILE
+  $EDITOR $PKG_FILE
 end
