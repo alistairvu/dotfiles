@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "catppuccin"
 
 [editor]
 line-number = "relative"
