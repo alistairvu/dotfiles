@@ -144,6 +144,7 @@
     "jinja-html": ["*.jinja", "*.tera"],
     "python": ["*.pyx"],
     "Shell Script": ["yabairc", "skhdrc", "*.fish"],
+    "JSONC": ["**/zed/settings.json"],
   },
   "linked_edits": true,
   "show_edit_predictions": true,
@@ -227,4 +228,5 @@
       "max_severity": null, // same values as the `diagnostics_max_severity` from the editor settings
     },
   },
+  "when_closing_with_no_tabs": "close_window",
 }
