@@ -119,6 +119,7 @@ darwin_packages:
     - zoxide
     - zstd
     - keychain
+    - sox
   casks:
     - adobe-digital-editions
     - affinity
@@ -139,7 +140,6 @@ darwin_packages:
     - font-commit-mono-nerd-font
     - font-maple-mono-nf
     - font-symbols-only-nerd-font
-    - fontsmoothingadjuster
     - ghostty
     - github
     - handbrake-app
@@ -179,7 +179,6 @@ darwin_packages:
     - the-unarchiver
     - utm
     - vlc
-    - xld
     - zalo
     - zen
     - zed
