@@ -17,10 +17,10 @@ yabai -m config \
   mouse_modifier ctrl \
   window_topmost on \
   window_shadow on \
-  window_opacity off
-  # window_opacity_duration 0.0 \
-  # active_window_opacity 1.0 \
-  # normal_window_opacity 0.90
+  window_opacity off \
+  window_opacity_duration 0.2 \
+  active_window_opacity 1.0 \
+  normal_window_opacity 0.90
 
 
 # autobalance
