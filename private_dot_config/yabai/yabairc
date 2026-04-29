@@ -102,7 +102,7 @@ yabai -m rule --add title='^Accounts$' app='^Microsoft Outlook$' manage=off
 # # borders
 borders active_color=0xff89b4fa \
   inactive_color=0x806c7086 \
-  width=5.0 \
+  width=6.0 \
   hidpi=on \
   # order=above \
   ax_focus=on & 2>/tmp/border.log
