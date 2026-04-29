@@ -16,7 +16,7 @@ yabai -m config \
   focus_follows_mouse autofocus \
   mouse_modifier ctrl \
   window_topmost on \
-  window_shadow off \
+  window_shadow floating \
   window_opacity off
   # window_opacity_duration 0.0 \
   # active_window_opacity 1.0 \
@@ -99,12 +99,12 @@ yabai -m rule --add title=' Preferences$' manage=off
 # off for Outlook
 yabai -m rule --add title='^Accounts$' app='^Microsoft Outlook$' manage=off
 
-# borders
-borders active_color=0xff89b4fa \
-  inactive_color=0x806c7086 \
-  width=6.0 \
-  hidpi=on \
-  # order=above \
-  ax_focus=off & 2>/tmp/border.log
+# # borders
+# borders active_color=0xff89b4fa \
+#   inactive_color=0x806c7086 \
+#   width=6.0 \
+#   hidpi=on \
+#   # order=above \
+#   ax_focus=off & 2>/tmp/border.log
 
 yabai -m config focus_follows_mouse autofocus
