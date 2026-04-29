@@ -123,7 +123,7 @@ hyper - l : open -a "Linear"
 # zed
 hyper - z : zed
 # browser (helium)
-hyper - b : open -a "$(defaultbrowser | grep "*" | cut -c 3-)" -n
+hyper - b : open -a "$(defaultbrowser | grep "*" | cut -c 3-)"
 # spotify
 hyper - s : open -a "Spotify"
 # raycast
