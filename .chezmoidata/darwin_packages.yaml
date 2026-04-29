@@ -119,7 +119,6 @@ darwin_packages:
     - zoxide
     - zstd
     - keychain
-    - sox
   casks:
     - adobe-digital-editions
     - affinity

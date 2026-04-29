@@ -44,3 +44,4 @@ yabai -m rule --add app="Microsoft Word" title="About Word" manage=off
 yabai -m rule --add app="Zed" title="Save" manage=off
 yabai -m rule --add app="Thaw" title="Software Update" manage=off
 yabai -m rule --add app="Thaw" title="Updating Thaw" manage=off
+yabai -m rule --add app="Microsoft PowerPoint" title="About PowerPoint" manage=off
