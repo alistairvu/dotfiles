@@ -105,6 +105,6 @@ borders active_color=0xff89b4fa \
   width=6.0 \
   hidpi=on \
   # order=above \
-  ax_focus=off & 2>/tmp/border.log
+  ax_focus=on & 2>/tmp/border.log
 
 yabai -m config focus_follows_mouse autofocus
