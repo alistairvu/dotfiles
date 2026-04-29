@@ -29,6 +29,7 @@ arch_packages:
     - live-server
     - neovim
     - openssh
+    - opencode-bin
     - paru
     - polkit
     - qemu-guest-agent
