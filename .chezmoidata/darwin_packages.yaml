@@ -120,6 +120,8 @@ darwin_packages:
     - zstd
     - keychain
   casks:
+    - 1password
+    - 1password-cli
     - adobe-digital-editions
     - affinity
     - aldente
@@ -127,7 +129,6 @@ darwin_packages:
     - anki
     - audacity
     - betterdisplay
-    - bitwarden
     - blender
     - bruno
     - calibre
@@ -145,10 +146,9 @@ darwin_packages:
     - helium-browser
     - hubstaff
     - knockknock
-    - linear-linear
+    - linear
     - linearmouse
     - lm-studio
-    - logi-options+
     - mac-mouse-fix
     - mailspring
     - markedit
@@ -208,6 +208,8 @@ darwin_packages:
       name: Xcode
     - id: "1136220934"
       name: Infuse
+    - id: "1569813296"
+      name: 1Password for Safari
   taps:
     - anomalyco/tap
     - arthur-ficial/tap
