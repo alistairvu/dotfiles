@@ -53,6 +53,7 @@ WHITELIST=(
     "Microsoft Outlook"
     "calibre"
     "Mailspring"
+    "Arc"
 )
 WHITELIST_STRING=$(IFS="|"; echo "${WHITELIST[*]}")
 yabai -m rule --add app!="^$WHITELIST_STRING\$" manage=off

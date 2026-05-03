@@ -46,3 +46,4 @@ yabai -m rule --add app="Thaw" title="Software Update" manage=off
 yabai -m rule --add app="Thaw" title="Updating Thaw" manage=off
 yabai -m rule --add app="Microsoft PowerPoint" title="About PowerPoint" manage=off
 yabai -m rule --add app="1Password" title="Settings" manage=off
+yabai -m rule --add app="Arc" title="Sign In to Arc" manage=off
