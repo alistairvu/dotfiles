@@ -108,6 +108,6 @@ set -gx HOMEBREW_NO_ENV_HINTS 1
 set -x HOMEBREW_CASK_OPTS --no-quarantine
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
-
+set -gx SSH_AUTH_SOCK ~/.1password/agent.sock
 op completion fish | source
 true
