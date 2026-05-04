@@ -9,6 +9,7 @@ arch_packages:
     - bat
     - bear
     - btop
+    - htop
     - btrfs-progs
     - chezmoi
     - cowsay
