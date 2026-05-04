@@ -47,3 +47,7 @@ yabai -m rule --add app="Thaw" title="Updating Thaw" manage=off
 yabai -m rule --add app="Microsoft PowerPoint" title="About PowerPoint" manage=off
 yabai -m rule --add app="1Password" title="Settings" manage=off
 yabai -m rule --add app="Arc" title="Sign In to Arc" manage=off
+yabai -m rule --add app="1Password" title="1Password" manage=off
+yabai -m rule --add app="Zen" title="Save Image" manage=off
+yabai -m rule --add app="1Password" title="Quick Access — 1Password" manage=off
+yabai -m rule --add app="Zen" title="Enter name of file to save to…" manage=off
