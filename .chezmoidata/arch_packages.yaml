@@ -1,5 +1,6 @@
 arch_packages:
   arch:
+    - 1password-cli
     - archlinuxcn-keyring
     - base
     - base-devel

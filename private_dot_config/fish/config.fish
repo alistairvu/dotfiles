@@ -47,6 +47,7 @@ if test -f /etc/arch-release
 
     if status --is-interactive
       # keychain --eval --quiet -Q gitgay | source
+      op completion fish | source
     end
     exit
 end
@@ -107,4 +108,6 @@ set -gx HOMEBREW_NO_ENV_HINTS 1
 set -x HOMEBREW_CASK_OPTS --no-quarantine
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
+
+op completion fish | source
 true
