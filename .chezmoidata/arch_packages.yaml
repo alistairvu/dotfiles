@@ -29,6 +29,7 @@ arch_packages:
     - lazygit
     - linux-aarch64
     - live-server
+    - fortune-mod
     - neovim
     - openssh
     - opencode-bin
