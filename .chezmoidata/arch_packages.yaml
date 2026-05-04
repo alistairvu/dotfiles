@@ -3,6 +3,7 @@ arch_packages:
     - archlinuxcn-keyring
     - base
     - base-devel
+    - basedpyright-bin
     - bat
     - bear
     - btop
