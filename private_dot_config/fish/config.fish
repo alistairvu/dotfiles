@@ -32,7 +32,7 @@ if test -f /etc/fedora-release
     zoxide init fish | source
 
     # keychain!
-    keychain --eval --quiet id_ed25519 | source
+    # keychain --eval --quiet id_ed25519 | source
     exit
 end
 
@@ -46,7 +46,7 @@ if test -f /etc/arch-release
     mise activate fish | source
 
     if status --is-interactive
-        keychain --eval --quiet -Q gitgay | source
+      # keychain --eval --quiet -Q gitgay | source
     end
     exit
 end
