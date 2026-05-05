@@ -137,6 +137,7 @@ darwin_packages:
     - daisydisk
     - fanny
     - figma
+    - firefox
     - font-commit-mono-nerd-font
     - font-maple-mono-nf
     - font-symbols-only-nerd-font
