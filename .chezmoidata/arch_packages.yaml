@@ -1,6 +1,7 @@
 arch_packages:
   arch:
     - 1password-cli
+    - asciiquarium
     - archlinuxcn-keyring
     - base
     - base-devel
@@ -8,6 +9,7 @@ arch_packages:
     - bat
     - bear
     - btop
+    - htop
     - btrfs-progs
     - chezmoi
     - cowsay
